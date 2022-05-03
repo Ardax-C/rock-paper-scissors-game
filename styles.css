@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arimo", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.player-container,
+.computer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  background-color: #0aa9d1;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.computer-container {
+  background-color: #eb4f4f;
+}
+
+.player-container .player,
+.computer-container .computer {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 15px;
+  width: 300px;
+  height: 300px;
+  background-color: #8528d1c5;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.computer-container .computer {
+  background-color: #f103f196;
+}
+
+.p-choice-text {
+  flex: 0;
+  margin: auto;
+  padding: 50px 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #dfee0ae8;
+}
+
+.choices {
+  flex: 0;
+  margin-top: auto;
+  margin-bottom: 10px;
+  padding: 10px 25px;
+  border: 2px solid black;
+  background-color: #d21af7;
+  border-radius: 10px;
+}
+
+.choices .button {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(133, 233, 142);
+  font-family: "Arimo", sans-serif;
+  color: rgb(16, 100, 121);
+}
+
+.choices .button:hover {
+  cursor: pointer;
+  background-color: rgb(28, 212, 43);
+  text-shadow: 2px 2px 3px rgb(10, 134, 236);
+}
+
+.c-choice-text {
+  flex: 0;
+  margin-bottom: auto;
+  padding: 85px 0;
+  color: rgba(70, 243, 26, 0.918);
+  font-size: 22px;
+  font-weight: 700;
+}
