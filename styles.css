@@ -1,17 +1,96 @@
-@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Arimo", sans-serif;
+  font-family: 'Arimo', sans-serif;
 }
 
 body {
   min-height: 100vh;
-  display: flex;
-  justify-content: space-around;
   margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.play-area {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.score-area {
+  margin: 10px auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100px;
+  width: 325px;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: #afe483cc;
+}
+
+.reset {
+  display: flex;
+  justify-content: center;
+}
+
+.reset-btn {
+  padding: 5px 25px;
+  background-color: #0aa9d1;
+  border: 2px ridge #d21af7;
+  border-radius: 7px;
+  color: #ed07f5cc;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: 1px 5px 15px grey;
+}
+
+.reset-btn:active {
+  border: 2px ridge #0aa9d1;
+  background-color: #d21af7;
+  color: #0aa9d1;
+}
+
+.score {
+  width: 100vw;
+}
+
+.results {
+  display: flex;
+  justify-content: space-between;
+}
+
+.round-results {
+  background-color: #eb4f4f;
+  border: 2px solid black;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 1px 5px 10px grey;
+}
+
+.round-winner,
+.round-winner-display {
+  color: #04f12c;
+  font-weight: 900;
+  text-shadow: 1px 1px 5px #000000;
+}
+
+.player-score,
+.player-score-display {
+  color: #0aa9d1;
+}
+
+.computer-score,
+.computer-score-display {
+  color: #eb4f4f;
 }
 
 .player-container,
@@ -72,7 +151,7 @@ body {
   border-radius: 10px;
   border: none;
   background-color: rgb(133, 233, 142);
-  font-family: "Arimo", sans-serif;
+  font-family: 'Arimo', sans-serif;
   color: rgb(16, 100, 121);
 }
 
